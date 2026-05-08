@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Truck,
   PackageCheck,
@@ -136,9 +137,33 @@ export default function Services() {
 
       <div className="flex flex-wrap gap-4">
 
-        <div className="px-5 py-3 rounded-full bg-black border border-yellow-500 text-yellow-500">
-          Deepak Roadlines
-        </div>
+        <div className="flex items-center gap-4 bg-black border border-yellow-500 rounded-2xl px-5 py-4 w-fit">
+
+  <div className="relative w-14 h-14">
+
+    <Image
+      src="/image/PNG_2-removebg-preview.png"
+      alt="Deepak Roadlines"
+      fill
+      sizes="56px"
+      className="object-contain"
+    />
+
+  </div>
+
+  <div>
+
+    <h4 className="text-yellow-500 font-bold text-lg">
+      Deepak Roadlines
+    </h4>
+
+    <p className="text-gray-400 text-sm">
+      Trusted Logistics Partner
+    </p>
+
+  </div>
+
+</div>
 
       </div>
 
@@ -148,28 +173,40 @@ export default function Services() {
     <div className="bg-zinc-900 border border-gray-800 rounded-3xl p-8">
 
       <h3 className="text-2xl font-bold mb-6">
-        Major Stations
+        WORKING STATIONS
       </h3>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="space-y-5">
 
-        {[
-          "Raigarh",
-          "Korba",
-          "Raipur",
-          "Bilaspur",
-          "Durg",
-          "Bhilai",
-        ].map((station, index) => (
-          <div
-            key={index}
-            className="px-5 py-3 rounded-full bg-black border border-gray-700 text-gray-300 hover:border-yellow-500 hover:text-yellow-500 transition duration-300"
-          >
-            {station}
-          </div>
-        ))}
+  {/* RAIGARH */}
+  <a
+    href="https://maps.app.goo.gl/8GEJLJ9NeYcAQMEDA?g_st=awb"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block bg-black border border-gray-700 rounded-2xl p-5 hover:border-yellow-500 transition duration-300"
+  >
 
-      </div>
+    <h4 className="text-yellow-500 text-xl font-bold">
+      RAIGARH
+    </h4>
+
+  </a>
+
+  {/* KORBA */}
+  <a
+    href="https://maps.app.goo.gl/4gv18d5VcoVcyfHU8?g_st=awb"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block bg-black border border-gray-700 rounded-2xl p-5 hover:border-yellow-500 transition duration-300"
+  >
+
+    <h4 className="text-yellow-500 text-xl font-bold">
+      KORBA
+    </h4>
+
+  </a>
+
+</div>
 
     </div>
 

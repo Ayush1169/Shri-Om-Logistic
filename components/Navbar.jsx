@@ -25,7 +25,7 @@ export default function Navbar() {
   <div className="relative w-14 h-14">
 
     <Image
-      src="/image/PNG_1-removebg-preview.png"
+      src="/image/Gemini_Generated_Image_l4mimjl4mimjl4mi.png"
       alt="Logo"
       fill
       sizes="56px"

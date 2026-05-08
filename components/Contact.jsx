@@ -78,26 +78,59 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-zinc-900 border border-gray-800 rounded-3xl p-8 flex gap-5">
-              <MapPin className="text-yellow-500" size={35} />
+            <div className="bg-zinc-900 border border-gray-800 rounded-3xl p-8">
 
-              <div>
-                <h3 className="text-2xl font-bold">
-                  Office Address
-                </h3>
+  <div className="flex items-center gap-4 mb-6">
 
-                <a
-  href="https://maps.google.com/?q=Gharumariya+Oddisa+Road+Shankar+Warehouse+Raigarh+Chhattisgarh"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-gray-400 mt-2 block hover:text-yellow-500 transition"
->
-  Gharumariya, Oddisa Road,
-  Shankar Warehouse,
-  Raigarh, Chhattisgarh
-</a>
-              </div>
-            </div>
+    <MapPin className="text-yellow-500" size={35} />
+
+    <h3 className="text-2xl font-bold">
+      Office Locations
+    </h3>
+
+  </div>
+
+  <div className="grid sm:grid-cols-2 gap-4">
+
+    {/* RAIGARH */}
+    <a
+      href="https://maps.app.goo.gl/8GEJLJ9NeYcAQMEDA?g_st=awb"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-black border border-gray-700 rounded-2xl p-5 hover:border-yellow-500 transition duration-300"
+    >
+
+      <h4 className="text-yellow-500 font-bold text-lg">
+        RAIGARH
+      </h4>
+
+      <p className="text-gray-400 mt-2 text-sm">
+        View Office Location
+      </p>
+
+    </a>
+
+    {/* KORBA */}
+    <a
+      href="https://maps.app.goo.gl/4gv18d5VcoVcyfHU8?g_st=awb"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-black border border-gray-700 rounded-2xl p-5 hover:border-yellow-500 transition duration-300"
+    >
+
+      <h4 className="text-yellow-500 font-bold text-lg">
+        KORBA
+      </h4>
+
+      <p className="text-gray-400 mt-2 text-sm">
+        View Office Location
+      </p>
+
+    </a>
+
+  </div>
+
+</div>
 
             <div className="bg-zinc-900 border border-gray-800 rounded-3xl p-8 flex gap-5">
               <Clock3 className="text-yellow-500" size={35} />
@@ -118,80 +151,58 @@ export default function Contact() {
           </div>
 
           {/* RIGHT FORM */}
-          <div className="bg-zinc-900 border border-gray-800 rounded-3xl p-8">
+         {/* WORKING STATIONS */}
+<div className="bg-zinc-900 border border-gray-800 rounded-3xl p-8">
 
-            <form
-  action="https://api.web3forms.com/submit"
-  method="POST"
-  className="space-y-6"
->
+  <h3 className="text-2xl font-bold mb-6">
+    WORKING STATIONS
+  </h3>
 
-    <input
-  type="hidden"
-  name="access_key"
-  value="3dc30042-da19-46d1-b63b-2c9e8b125b91"
-/>
+  <div className="space-y-5">
 
-<input
-  type="hidden"
-  name="subject"
-  value="New Transport Inquiry"
-/>
+    {/* RAIGARH */}
+    <a
+      href="https://maps.app.goo.gl/8GEJLJ9NeYcAQMEDA?g_st=awb"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block bg-black border border-gray-700 rounded-2xl p-5 hover:border-yellow-500 transition duration-300"
+    >
 
-<input
-  type="hidden"
-  name="from_name"
-  value="Shri Om Logistic Website"
-/>
+      <h4 className="text-yellow-500 text-xl font-bold">
+        RAIGARH
+      </h4>
 
-<input
-  type="hidden"
-  name="redirect"
-  value="http://localhost:3000"
-/>
+      <p className="text-gray-400 mt-3">
+        +91 9993263980
+        <br />
+        +91 9826136082
+      </p>
 
-              <input
-                type="text"
-                name="user_name"
-                placeholder="Your Name"
-                required
-                className="w-full bg-black border border-gray-700 rounded-2xl px-5 py-4 outline-none focus:border-yellow-500"
-              />
+    </a>
 
-              <input
-                type="email"
-                name="user_email"
-                placeholder="Your Email"
-                required
-                className="w-full bg-black border border-gray-700 rounded-2xl px-5 py-4 outline-none focus:border-yellow-500"
-              />
+    {/* KORBA */}
+    <a
+      href="https://maps.app.goo.gl/4gv18d5VcoVcyfHU8?g_st=awb"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block bg-black border border-gray-700 rounded-2xl p-5 hover:border-yellow-500 transition duration-300"
+    >
 
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-                className="w-full bg-black border border-gray-700 rounded-2xl px-5 py-4 outline-none focus:border-yellow-500"
-              />
+      <h4 className="text-yellow-500 text-xl font-bold">
+        KORBA
+      </h4>
 
-              <textarea
-                rows="6"
-                name="message"
-                placeholder="Your Message"
-                required
-                className="w-full bg-black border border-gray-700 rounded-2xl px-5 py-4 outline-none focus:border-yellow-500"
-              ></textarea>
+      <p className="text-gray-400 mt-3">
+        +91 9109288364
+        <br />
+        +91 8962857699
+      </p>
 
-              <button
-                type="submit"
-                className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold py-4 rounded-2xl transition duration-300"
-              >
-                Send Message
-              </button>
+    </a>
 
-            </form>
+  </div>
 
-          </div>
+</div>
 
         </div>
 
