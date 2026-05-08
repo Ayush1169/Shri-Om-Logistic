@@ -74,7 +74,7 @@ export default function Hero() {
                   PAN
                 </h2>
                 <p className="text-gray-400 mt-2">
-                  India Network
+                  Chhatisgarh Network
                 </p>
               </div>
 
@@ -85,15 +85,16 @@ export default function Hero() {
           {/* RIGHT IMAGE PLACEHOLDER */}
           <div className="relative">
 
-           <div className="relative h-[500px] w-full rounded-3xl overflow-hidden border border-gray-800">
+           <div className="relative w-full h-[320px] sm:h-[420px] lg:h-[500px] rounded-3xl overflow-hidden border border-gray-800">
 
   <Image
-    src="/image/truck1"
-    alt="Truck"
-    fill
-    className="object-cover"
-    priority
-  />
+  src="/image/file_0000000062b4720c8add824db597efed.png"
+  alt="Truck"
+  fill
+  sizes="(max-width: 768px) 100vw, 50vw"
+  className="object-cover object-center"
+  priority
+/>
 
   {/* DARK OVERLAY */}
   <div className="absolute inset-0 bg-black/20"></div>

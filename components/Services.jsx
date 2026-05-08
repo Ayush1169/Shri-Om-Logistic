@@ -39,7 +39,7 @@ export default function Services() {
 
     {
       icon: <Globe size={40} />,
-      title: "PAN India Network",
+      title: "PAN Chhattisgarh Network",
       description:
         "Strong transport connectivity and operational support across multiple states and major routes.",
     },
@@ -98,7 +98,84 @@ export default function Services() {
             </div>
           ))}
 
+          
+
         </div>
+
+        {/* ASSOCIATED NETWORK */}
+<div className="mt-24">
+
+  <div className="text-center mb-14">
+
+    <p className="text-yellow-500 uppercase tracking-widest font-semibold mb-4">
+      Network & Associations
+    </p>
+
+    <h2 className="text-4xl md:text-5xl font-bold">
+      Associated Companies &
+      <span className="text-yellow-500">
+        {" "}Stations
+      </span>
+    </h2>
+
+    <p className="text-gray-400 mt-6 text-lg">
+      Strong logistics partnerships and operational
+      connectivity across major transport locations.
+    </p>
+
+  </div>
+
+  <div className="grid md:grid-cols-2 gap-8">
+
+    {/* COMPANIES */}
+    <div className="bg-zinc-900 border border-gray-800 rounded-3xl p-8">
+
+      <h3 className="text-2xl font-bold mb-6">
+        Associated Companies
+      </h3>
+
+      <div className="flex flex-wrap gap-4">
+
+        <div className="px-5 py-3 rounded-full bg-black border border-yellow-500 text-yellow-500">
+          Deepak Roadlines
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* STATIONS */}
+    <div className="bg-zinc-900 border border-gray-800 rounded-3xl p-8">
+
+      <h3 className="text-2xl font-bold mb-6">
+        Major Stations
+      </h3>
+
+      <div className="flex flex-wrap gap-4">
+
+        {[
+          "Raigarh",
+          "Korba",
+          "Raipur",
+          "Bilaspur",
+          "Durg",
+          "Bhilai",
+        ].map((station, index) => (
+          <div
+            key={index}
+            className="px-5 py-3 rounded-full bg-black border border-gray-700 text-gray-300 hover:border-yellow-500 hover:text-yellow-500 transition duration-300"
+          >
+            {station}
+          </div>
+        ))}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
       </div>
     </section>

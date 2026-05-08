@@ -72,7 +72,7 @@ export default function Network() {
               <Globe2 className="text-yellow-500 mb-5" size={45} />
 
               <h3 className="text-3xl font-bold">
-                PAN India
+                PAN Chhatisgarh
               </h3>
 
               <p className="text-gray-400 mt-3">
