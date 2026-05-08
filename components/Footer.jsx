@@ -130,7 +130,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://maps.google.com/?q=Gharumariya+Oddisa+Road+Shankar+Warehouse+Raigarh+Chhattisgarh"
+                href="https://maps.app.goo.gl/8GEJLJ9NeYcAQMEDA?g_st=awb"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-4 text-gray-400 hover:text-yellow-500 transition"
